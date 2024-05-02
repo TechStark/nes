@@ -5,7 +5,7 @@ import (
 	"strings"
 
 	"github.com/fogleman/nes/nes"
-	"github.com/go-gl/gl/v4.6-compatibility/gl"
+	"github.com/go-gl/gl/v2.1/gl"
 	"github.com/go-gl/glfw/v3.3/glfw"
 )
 
