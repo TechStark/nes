@@ -8,7 +8,7 @@ import (
 	"path"
 	"strings"
 
-	"github.com/go-gl/gl/v2.1/gl"
+	"github.com/go-gl/gl/v4.6-compatibility/gl"
 )
 
 const textureSize = 4096

@@ -1,7 +1,6 @@
 package main
 
 import (
-	"io/ioutil"
 	"log"
 	"os"
 	"path"
@@ -32,7 +31,7 @@ func getPaths() []string {
 		return nil
 	}
 	if info.IsDir() {
-		infos, err := ioutil.ReadDir(arg)
+		infos, err := os.ReadDir(arg)
 		if err != nil {
 			return nil
 		}

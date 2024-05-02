@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
 	"log"
 	"os"
 	"path"
@@ -31,7 +30,7 @@ func main() {
 		log.Fatalln("Usage: go run util/roms.go roms_directory")
 	}
 	dir := args[0]
-	infos, err := ioutil.ReadDir(dir)
+	infos, err := os.ReadDir(dir)
 	if err != nil {
 		panic(err)
 	}
